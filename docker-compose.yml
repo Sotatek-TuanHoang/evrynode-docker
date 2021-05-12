@@ -1,0 +1,12 @@
+version: '2'
+services:
+  evry-node:
+    build: .
+    container_name: evry-node
+    volumes:
+      - ./data-node:/evrynet/data-node
+    ports:
+      - 8555:8545
+      - 8556:8546
+      - 8557:8547
+      - 30333:30303
